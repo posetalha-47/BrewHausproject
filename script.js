@@ -77,3 +77,51 @@ const yearElement = document.querySelector("#current-year");
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
+
+
+
+// BrewHaus Gallery Lightbox
+const galleryItems = document.querySelectorAll(".gallery-item");
+const lightbox = document.querySelector("#galleryLightbox");
+const lightboxImage = document.querySelector("#lightboxImage");
+const closeLightbox = document.querySelector(".lightbox-close");
+
+let previousFocus = null;
+
+function closeGalleryLightbox() {
+  if (!lightbox || lightbox.hidden) return;
+
+  lightbox.hidden = true;
+  lightboxImage.src = "";
+  if (previousFocus) previousFocus.focus();
+}
+
+galleryItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const image = item.querySelector("img");
+
+    previousFocus = item;
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+    lightbox.hidden = false;
+    closeLightbox.focus();
+  });
+});
+
+if (closeLightbox) {
+  closeLightbox.addEventListener("click", closeGalleryLightbox);
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeGalleryLightbox();
+    }
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeGalleryLightbox();
+  }
+});
