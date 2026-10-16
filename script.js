@@ -1,4 +1,4 @@
-```javascript
+
 // Mobile navigation
 
 const menuToggle = document.querySelector(".menu-toggle");
@@ -77,4 +77,3 @@ const yearElement = document.querySelector("#current-year");
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
-```
