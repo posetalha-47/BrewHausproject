@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the BrewHaus coffee, tea and bakery menu.">
+    <title>Our Menu | BrewHaus</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="./index.html">BrewHaus.</a>
+
+        <nav aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html" aria-current="page">Our Menu</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./about.html">Our Story</a>
+            <a href="./contact.html">Visit Us</a>
+        </nav>
+    </header>
+
+    <main class="menu-page">
+        <section class="menu-heading">
+            <p class="eyebrow">FRESHLY BREWED</p>
+            <h1>Our Menu</h1>
+            <p>Discover your favourite coffee and freshly baked treats.</p>
+        </section>
+
+        <div class="menu-filters" aria-label="Menu categories">
+            <button class="active" data-filter="all" aria-pressed="true">All Items</button>
+            <button data-filter="coffee" aria-pressed="false">Coffee</button>
+            <button data-filter="tea" aria-pressed="false">Tea</button>
+            <button data-filter="bakery" aria-pressed="false">Bakery</button>
+        </div>
+
+        <section class="menu-grid" aria-label="Menu items">
+            <article class="menu-card" data-category="coffee">
+                <span class="menu-icon" aria-hidden="true">☕</span>
+                <h2>Classic Espresso</h2>
+                <p>A rich and bold espresso.</p>
+                <span class="price">Rs. 350</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <span class="menu-icon" aria-hidden="true">🥛</span>
+                <h2>Creamy Cappuccino</h2>
+                <p>Espresso with steamed milk and foam.</p>
+                <span class="price">Rs. 450</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <span class="menu-icon" aria-hidden="true">🧊</span>
+                <h2>Iced Latte</h2>
+                <p>Chilled milk and espresso over ice.</p>
+                <span class="price">Rs. 500</span>
+            </article>
+
+            <article class="menu-card" data-category="tea">
+                <span class="menu-icon" aria-hidden="true">🍵</span>
+                <h2>Green Tea</h2>
+                <p>A light and refreshing cup of tea.</p>
+                <span class="price">Rs. 250</span>
+            </article>
+
+            <article class="menu-card" data-category="tea">
+                <span class="menu-icon" aria-hidden="true">🫖</span>
+                <h2>Masala Chai</h2>
+                <p>Traditional tea with aromatic spices.</p>
+                <span class="price">Rs. 300</span>
+            </article>
+
+            <article class="menu-card" data-category="bakery">
+                <span class="menu-icon" aria-hidden="true">🥐</span>
+                <h2>Butter Croissant</h2>
+                <p>A flaky, freshly baked pastry.</p>
+                <span class="price">Rs. 280</span>
+            </article>
+
+            <article class="menu-card" data-category="bakery">
+                <span class="menu-icon" aria-hidden="true">🍰</span>
+                <h2>Chocolate Cake</h2>
+                <p>A delicious chocolate treat.</p>
+                <span class="price">Rs. 400</span>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 BrewHaus. Freshly brewed, lovingly served.</p>
+    </footer>
+
+</body>
+</html>
