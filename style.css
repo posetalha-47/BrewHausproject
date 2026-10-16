@@ -765,7 +765,7 @@ a:focus-visible {
 }
 
 
-```css
+
 :root {
     --cream: #faf7f1;
     --white: #ffffff;
@@ -962,4 +962,3 @@ a:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
-```
