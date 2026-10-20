@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact BrewHaus cafe or book a table.">
+  <title>Contact Us | BrewHaus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="./index.html" class="logo">Brew<span>Haus.</span></a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+      <a href="./index.html">Home</a>
+      <a href="./menu.html">Our Menu</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./about.html">Our Story</a>
+      <a href="./contact.html" class="nav-button" aria-current="page">Visit Us</a>
+    </nav>
+  </div>
+</header>
+
+<main class="contact-page container">
+  <section class="contact-heading">
+    <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+    <h1>Let's Talk Coffee</h1>
+    <p>Have a question or planning a visit? Send us a message.</p>
+  </section>
+
+  <div class="contact-grid">
+    <!-- Left Info Card -->
+    <div class="info-card">
+      <h2>Visit BrewHaus</h2>
+      <p>Come in for freshly brewed coffee, delicious bites, and a relaxing atmosphere.</p>
+
+      <h3>Our Address</h3>
+      <p>123 Coffee Street, Your City</p>
+
+      <h3>Opening Hours</h3>
+      <p>Monday – Friday: 8:00 AM – 9:00 PM<br>Saturday – Sunday: 9:00 AM – 10:00 PM</p>
+
+      <h3>Email</h3>
+      <p>hello@brewhaus.example</p>
+    </div>
+
+    <!-- Right Form -->
+    <!-- Yahan Formspree URL update kar diya gaya hai -->
+<form class="reservation-form" action="https://formspree.io/f/xvkzjaao" method="POST">
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Your Name" required>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+  <div class="form-group">
+    <input type="date" name="date" required>
+  </div>
+  <div class="form-group">
+    <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+  </div>
+  <div class="form-group full-width">
+    <textarea name="message" rows="4" placeholder="Special Requests"></textarea>
+  </div>
+  <button type="submit" class="btn-submit">Book Table</button>
+</form>
+  </div>
+
+  <!-- Find Us Map -->
+  <section class="map-section">
+    <h2>Find Us</h2>
+    <p>Visit our café at our primary location.</p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.5323932810086!2d74.35874731511!3d31.520369981368666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore!5e0!3m2!1sen!2spk!4v1633000000000!5m2!1sen!2spk" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <div class="footer-block">
+      <h3>Opening Hours</h3>
+      <p>Mon - Fri: 8:00 AM - 9:00 PM</p>
+      <p>Sat - Sun: 9:00 AM - 10:00 PM</p>
+    </div>
+    <div class="footer-block">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 BrewHaus. Made with love and coffee.</p>
+</footer>
+
+</body>
+</html>
