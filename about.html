@@ -1,57 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover the story, values, and passion behind BrewHaus cafe.">
+  <meta name="description" content="Discover the story, values, and passion behind BrewHaus cafe. Learn about our specialty coffee and welcoming community space.">
   <title>Our Story | BrewHaus</title>
-   <link rel="stylesheet" href="css/style.css">
-  
-<script src="js/script.js" defer></script>
+
+  <!-- Favicon & SEO Meta Tags -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Story — BrewHaus">
+  <meta property="og:description" content="BrewHaus is a neighborhood cafe built around the simple joy of a really good cup of coffee. Learn more about our values and mission.">
+  <meta property="og:image" content="https://posetalha-47.github.io/BrewHausproject/images/hero-og.jpg">
+  <meta property="og:url" content="https://posetalha-47.github.io/BrewHausproject/about.html">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  
-<header class="site-header">
+
+  <!-- Header -->
+  <header class="site-header">
     <div class="container navbar">
 
-        <a href="./index.html" class="logo">Brew<span>Haus.</span></a>
+      <a href="./index.html" class="logo" aria-label="BrewHaus Home">Brew<span>Haus.</span></a>
 
-        <button class="menu-toggle"
-            type="button"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-            aria-controls="main-navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+      <button class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <nav id="main-navigation" class="navigation" aria-label="Main navigation">
-            <a href="./index.html">Home</a>
-            <a href="./menu.html">Our Menu</a>
-            <a href="./gallery.html">Gallery</a>
-            <a href="./about.html" aria-current="page">Our Story</a>
-            <a href="./contact.html" class="nav-button">Visit Us</a>
-        </nav>
+      <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./menu.html">Our Menu</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./about.html" aria-current="page">Our Story</a>
+        <a href="./contact.html" class="nav-button">Visit Us</a>
+      </nav>
 
     </div>
-</header>
+  </header>
 
-
-  <main>
+  <!-- Main Content -->
+  <main class="container">
     <section class="about-hero">
       <div class="about-hero-content">
         <p class="eyebrow">MORE THAN JUST COFFEE</p>
         <h1>Our Story</h1>
-        <p>
-          Great coffee, fresh flavours, and a place where everyone
-          feels at home.
-        </p>
+        <p>Great coffee, fresh flavours, and a place where everyone feels at home.</p>
       </div>
       <img
         src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=80"
-        alt="Warm and welcoming cafe interior">
+        alt="Warm and welcoming cafe interior"
+        loading="lazy">
     </section>
 
     <section class="about-story">
@@ -61,15 +67,10 @@
       </div>
       <div>
         <p>
-          BrewHaus is a neighbourhood cafe built around the simple
-          joy of a really good cup of coffee. We believe the best
-          moments often happen around a table, over a warm drink
-          and a fresh bite.
+          BrewHaus is a neighbourhood cafe built around the simple joy of a really good cup of coffee. We believe the best moments often happen around a table, over a warm drink and a fresh bite.
         </p>
         <p>
-          From the first morning coffee to a relaxed afternoon
-          catch-up, our goal is to make every visit welcoming,
-          comfortable, and memorable.
+          From the first morning coffee to a relaxed afternoon catch-up, our goal is to make every visit welcoming, comfortable, and memorable.
         </p>
       </div>
     </section>
@@ -96,9 +97,50 @@
     </section>
   </main>
 
+  <!-- Unified Footer -->
   <footer class="site-footer">
-    <p>&copy; 2026 BrewHaus. Made with love and coffee.</p>
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="./index.html" class="logo" aria-label="BrewHaus Home">
+          Brew<span>Haus.</span>
+        </a>
+        <p>Good coffee, warm conversations, and moments worth remembering.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Our Menu</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./about.html">Our Story</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h3>Opening Hours</h3>
+        <p>Monday – Friday: 8:00 AM – 10:00 PM</p>
+        <p>Saturday – Sunday: 9:00 AM – 11:00 PM</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Connect</h3>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="BrewHaus on Facebook">Facebook</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="BrewHaus on Instagram">Instagram</a>
+        </div>
+        <p class="map-link"><a href="./contact.html#map">Find Us on Google Maps &rarr;</a></p>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> BrewHaus. All rights reserved.</p>
+      <p>Made with ☕ and care.</p>
+    </div>
   </footer>
 
-
-
+</body>
+</html>

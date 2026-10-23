@@ -1,5 +1,8 @@
+/* ==========================================
+   BREWHAUS - MAIN JAVASCRIPT UTILITIES
+   ========================================== */
 
-/* Mobile Navigation */
+/* 1. Mobile Navigation */
 document.querySelectorAll(".site-header").forEach((header) => {
     const button = header.querySelector(".menu-toggle");
     const nav = header.querySelector("nav");
@@ -27,10 +30,12 @@ document.querySelectorAll(".site-header").forEach((header) => {
         );
     });
 
+    // Close mobile menu when clicking any navigation link
     nav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", closeMenu);
     });
 
+    // Close menu on screen resize if window expands past mobile breakpoint
     window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
             closeMenu();
@@ -38,25 +43,13 @@ document.querySelectorAll(".site-header").forEach((header) => {
     });
 });
 
-document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-        document.querySelectorAll(".site-header").forEach((header) => {
-            const button = header.querySelector(".menu-toggle");
-            if (button) button.click();
-        });
-    }
-});
-
-
-/* Update Footer Year */
+/* 2. Dynamic Footer Year */
 const yearElement = document.querySelector("#current-year");
-
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
 
-
-/* Menu Filter */
+/* 3. Menu Category Filter */
 const filterButtons = document.querySelectorAll("[data-filter]");
 const menuCards = document.querySelectorAll(".menu-card");
 
@@ -82,8 +75,7 @@ filterButtons.forEach((button) => {
     });
 });
 
-
-/* Gallery Lightbox */
+/* 4. Gallery Lightbox */
 const galleryItems = document.querySelectorAll(".gallery-item");
 const lightbox = document.querySelector("#galleryLightbox");
 const lightboxImage = document.querySelector("#lightboxImage");
@@ -98,6 +90,7 @@ function closeGalleryLightbox() {
 
     if (lightboxImage) {
         lightboxImage.src = "";
+        lightboxImage.alt = "";
     }
 
     if (previousFocus) {
@@ -134,11 +127,27 @@ if (lightbox) {
     });
 }
 
+/* 5. Unified Global ESC Key Handler (Closes Menu & Lightbox cleanly) */
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-        closeGalleryLightbox();
+        // Handle Lightbox Close
+        if (lightbox && !lightbox.hidden) {
+            closeGalleryLightbox();
+            return;
+        }
+
+        // Handle Mobile Menu Close
+        document.querySelectorAll(".site-header").forEach((header) => {
+            const button = header.querySelector(".menu-toggle");
+            const nav = header.querySelector("nav");
+
+            if (button && nav && (nav.classList.contains("open") || nav.classList.contains("is-open"))) {
+                nav.classList.remove("open", "is-open");
+                button.classList.remove("active");
+                button.setAttribute("aria-expanded", "false");
+                button.setAttribute("aria-label", "Open navigation menu");
+                button.focus(); // Return focus back to hamburger button
+            }
+        });
     }
 });
-
-
-
