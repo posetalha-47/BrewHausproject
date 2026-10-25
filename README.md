@@ -12,10 +12,10 @@
 ## Project Screenshots
 
 ### Desktop Preview
-![BrewHaus Desktop Preview](images/desktop-preview.png)
+![BrewHaus Desktop Preview](images/desktop-preview.png.png)
 
 ### Mobile Preview
-![BrewHaus Mobile Preview](images/mobile-preview.png)
+![BrewHaus Mobile Preview](images/mobile-preview.png.png)
 
 
 ## Demo Video
