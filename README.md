@@ -9,7 +9,13 @@
 - **GitHub Repository:** [https://github.com/posetalha-47/BrewHausproject](https://github.com/posetalha-47/BrewHausproject)
 
 ---
+## Project Screenshots
 
+### Desktop Preview
+![BrewHaus Desktop Preview](images/desktop-preview.png)
+
+### Mobile Preview
+![BrewHaus Mobile Preview](images/mobile-preview.png)
 ## Features
 - **Semantic HTML5 Architecture:** Implements `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` tags across all 5 pages (`index.html`, `menu.html`, `gallery.html`, `about.html`, `contact.html`).
 - **Responsive Mobile-First Design:** Fluid layout styled with CSS Flexbox, Grid, custom properties, and `clamp()` typography. Tested seamlessly on mobile, tablet, and desktop viewports.
