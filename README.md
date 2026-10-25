@@ -16,6 +16,11 @@
 
 ### Mobile Preview
 ![BrewHaus Mobile Preview](images/mobile-preview.png)
+
+
+## Demo Video
+📹 **Watch Project Walkthrough:** [Click here to watch the demo video](https://www.loom.com/share/341246cf522346ddb21141196329ca58)
+
 ## Features
 - **Semantic HTML5 Architecture:** Implements `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` tags across all 5 pages (`index.html`, `menu.html`, `gallery.html`, `about.html`, `contact.html`).
 - **Responsive Mobile-First Design:** Fluid layout styled with CSS Flexbox, Grid, custom properties, and `clamp()` typography. Tested seamlessly on mobile, tablet, and desktop viewports.
