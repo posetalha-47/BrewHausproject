@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact BrewHaus cafe, check opening hours, or book a table online.">
+  <meta name="theme-color" content="#f8f3eb">
+
   <title>Contact Us | BrewHaus</title>
 
   <!-- Favicon & SEO Meta Tags -->
@@ -21,7 +23,7 @@
 
 <header class="site-header">
   <div class="container navbar">
-    <a href="./index.html" class="logo" aria-label="BrewHaus Home">Brew<span>Haus.</span></a>
+    <a href="index.html" class="logo" aria-label="BrewHaus Home">Brew<span>Haus.</span></a>
 
     <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
       <span></span>
@@ -30,11 +32,11 @@
     </button>
 
     <nav id="main-navigation" class="navigation" aria-label="Main navigation">
-      <a href="./index.html">Home</a>
-      <a href="./menu.html">Our Menu</a>
-      <a href="./gallery.html">Gallery</a>
-      <a href="./about.html">Our Story</a>
-      <a href="./contact.html" class="nav-button" aria-current="page">Visit Us</a>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html" class="nav-button" aria-current="page">Visit Us</a>
     </nav>
   </div>
 </header>
@@ -115,7 +117,7 @@
   <div class="container footer-grid">
 
     <div class="footer-brand">
-      <a href="./index.html" class="logo" aria-label="BrewHaus Home">
+      <a href="index.html" class="logo" aria-label="BrewHaus Home">
         Brew<span>Haus.</span>
       </a>
       <p>Good coffee, warm conversations, and moments worth remembering.</p>
@@ -124,11 +126,11 @@
     <div class="footer-links">
       <h3>Explore</h3>
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./menu.html">Our Menu</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./about.html">Our Story</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
 
@@ -144,7 +146,7 @@
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="BrewHaus on Facebook">Facebook</a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="BrewHaus on Instagram">Instagram</a>
       </div>
-      <p class="map-link"><a href="./contact.html#map">Find Us on Google Maps &rarr;</a></p>
+      <p class="map-link"><a href="contact.html#map">Find Us on Google Maps &rarr;</a></p>
     </div>
 
   </div>
@@ -156,11 +158,12 @@
 </footer>
 
 <script>
-  // Set minimum date for reservation field to today
+  // Block past dates dynamically in reservation picker
   document.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.getElementById('form-date');
     if (dateInput) {
-      dateInput.min = new Date().toISOString().split('T')[0];
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.min = today;
     }
   });
 </script>

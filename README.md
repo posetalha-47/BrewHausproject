@@ -9,35 +9,39 @@
 - **GitHub Repository:** [https://github.com/posetalha-47/BrewHausproject](https://github.com/posetalha-47/BrewHausproject)
 
 ---
+
 ## Project Screenshots
 
 ### Desktop Preview
-![BrewHaus Desktop Preview](images/desktop-preview.png.png)
+![BrewHaus Desktop Preview](images/desktop-preview.png)
 
 ### Mobile Preview
-![BrewHaus Mobile Preview](images/mobile-preview.png.png)
+![BrewHaus Mobile Preview](images/mobile-preview.png)
 
+---
 
 ## Demo Video
 📹 **Watch Project Walkthrough:** [Click here to watch the demo video](https://www.loom.com/share/341246cf522346ddb21141196329ca58)
+
+---
 
 ## Features
 - **Semantic HTML5 Architecture:** Implements `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` tags across all 5 pages (`index.html`, `menu.html`, `gallery.html`, `about.html`, `contact.html`).
 - **Responsive Mobile-First Design:** Fluid layout styled with CSS Flexbox, Grid, custom properties, and `clamp()` typography. Tested seamlessly on mobile, tablet, and desktop viewports.
 - **Accessibility & Keyboard Navigation (a11y):** Full keyboard support (`Tab`, `Enter`, `Esc`), ARIA attributes (`aria-expanded`, `aria-label`, `aria-pressed`, `aria-current`), visible `:focus-visible` outlines, and `prefers-reduced-motion` compliance.
 - **Interactive JavaScript Utilities:**
-  - Keyboard-navigable mobile hamburger menu.
+  - Keyboard-navigable mobile hamburger menu with focus trapping and `Escape` key return.
   - Category filter tabs on the Menu page.
   - Image gallery modal lightbox with backdrop click and `Escape` key handlers.
-- **Table Reservation Form:** HTML5 form validation paired with a live Formspree submission endpoint and Google Maps iframe embed.
+- **Table Reservation Form:** HTML5 form validation with minimum date constraint blocking past dates, paired with a live Formspree submission endpoint and Google Maps iframe embed.
 - **Performance & SEO Optimization:** Optimized assets, `loading="lazy"` off-screen image rendering, Open Graph meta social cards, and favicon support.
 
 ---
 
 ## Tech Stack
-- **HTML5** (Semantic structure, a11y)
+- **HTML5** (Semantic structure, ARIA accessibility)
 - **CSS3** (Flexbox, CSS Grid, Custom Design Tokens, Mobile-First Media Queries)
-- **Vanilla JavaScript (ES6)** (DOM Manipulation, Event Listeners, ARIA Toggles)
+- **Vanilla JavaScript (ES6)** (DOM Manipulation, Event Listeners, Keyboard Accessibility)
 - **Formspree API** (Form Backend Service)
 - **GitHub Pages** (Deployment)
 
@@ -45,12 +49,16 @@
 
 ## Lighthouse Performance Audit
 
-| Metric | Score | Target |
+![Lighthouse Audit Report](images/lighthouse-score.png)
+
+| Category | Score | Target |
 | :--- | :--- | :--- |
 | **Performance** | **95+** | 90+ |
 | **Accessibility** | **100** | 95+ |
 | **Best Practices** | **100** | 90+ |
 | **SEO** | **100** | 95+ |
+
+*Audited on live mobile viewport via Chrome DevTools Lighthouse.*
 
 ---
 

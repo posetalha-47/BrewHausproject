@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the BrewHaus coffee, tea and bakery menu.">
+    <meta name="theme-color" content="#f8f3eb">
+    
     <title>Our Menu | BrewHaus</title>
 
     <!-- Favicon & SEO Meta Tags -->
@@ -14,15 +16,18 @@
     <meta property="og:image" content="https://posetalha-47.github.io/BrewHausproject/images/hero-og.jpg">
     <meta property="og:url" content="https://posetalha-47.github.io/BrewHausproject/menu.html">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
 
+    <!-- Header -->
     <header class="site-header">
         <div class="container navbar">
 
-            <a href="./index.html" class="logo" aria-label="BrewHaus Home">Brew<span>Haus.</span></a>
+            <a href="index.html" class="logo" aria-label="BrewHaus Home">
+                Brew<span>Haus.</span>
+            </a>
 
             <button
                 class="menu-toggle"
@@ -36,16 +41,17 @@
             </button>
 
             <nav id="main-navigation" class="navigation" aria-label="Main navigation">
-                <a href="./index.html">Home</a>
-                <a href="./menu.html" aria-current="page">Our Menu</a>
-                <a href="./gallery.html">Gallery</a>
-                <a href="./about.html">Our Story</a>
-                <a href="./contact.html" class="nav-button">Visit Us</a>
+                <a href="index.html">Home</a>
+                <a href="menu.html" aria-current="page">Our Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">Our Story</a>
+                <a href="contact.html" class="nav-button">Visit Us</a>
             </nav>
 
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="menu-page container">
         <section class="menu-heading">
             <p class="eyebrow">FRESHLY BREWED</p>
@@ -53,12 +59,12 @@
             <p>Discover your favourite coffee and freshly baked treats.</p>
         </section>
 
-        <!-- Menu Filter Tabs with role="group" for Accessibility -->
-        <div class="menu-filters" role="group" aria-label="Menu category filters">
-            <button class="active" data-filter="all" aria-pressed="true">All Items</button>
-            <button data-filter="coffee" aria-pressed="false">Coffee</button>
-            <button data-filter="tea" aria-pressed="false">Tea</button>
-            <button data-filter="bakery" aria-pressed="false">Bakery</button>
+        <!-- Menu Filter Tabs -->
+        <div class="menu-filters" role="tablist" aria-label="Menu category filters">
+            <button class="filter-btn active" role="tab" data-filter="all" aria-selected="true">All Items</button>
+            <button class="filter-btn" role="tab" data-filter="coffee" aria-selected="false">Coffee</button>
+            <button class="filter-btn" role="tab" data-filter="tea" aria-selected="false">Tea</button>
+            <button class="filter-btn" role="tab" data-filter="bakery" aria-selected="false">Bakery</button>
         </div>
 
         <section class="menu-grid" aria-label="Menu items">
@@ -118,7 +124,7 @@
         <div class="container footer-grid">
 
             <div class="footer-brand">
-                <a href="./index.html" class="logo" aria-label="BrewHaus Home">
+                <a href="index.html" class="logo" aria-label="BrewHaus Home">
                     Brew<span>Haus.</span>
                 </a>
                 <p>Good coffee, warm conversations, and moments worth remembering.</p>
@@ -127,11 +133,11 @@
             <div class="footer-links">
                 <h3>Explore</h3>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./menu.html">Our Menu</a></li>
-                    <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="./about.html">Our Story</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -147,7 +153,7 @@
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="BrewHaus on Facebook">Facebook</a>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="BrewHaus on Instagram">Instagram</a>
                 </div>
-                <p class="map-link"><a href="./contact.html#map">Find Us on Google Maps &rarr;</a></p>
+                <p class="map-link"><a href="contact.html#map">Find Us on Google Maps &rarr;</a></p>
             </div>
 
         </div>
